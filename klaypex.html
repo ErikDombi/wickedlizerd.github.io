@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Klaypex</title>
+	<meta charset="utf-8"/>
+    <style>
+        #main{
+            position: relative; 
+
+            
+        }
+        #sidebar{
+            position: absolute;
+        }
+		body{
+			height:1080px;
+		}
+    </style>
+</head>
+<body id ="everything" style="background-color: #333333; height: 2160px">
+    <div id="main">
+        <header style="background-color: black; left: 0px; top:0px;opacity: .8;z-index: 999; width:1903px;height: 100px;color: white;position:fixed; text-align:center;text-anchor:start">
+            <h3 style="font-family: 'Agency FB'; font-size: 60px; position: absolute; left: 50px; top: -43px;">KLAYPEX</h3>
+            <a href="" style="font-family:'Agency FB';opacity:0; font-size: 40px; text-decoration:none; color:white; position: absolute;display: block; margin: 29px 400px;">HOME</a>
+            <a href="" style="font-family:'Agency FB';opacity:0; font-size: 40px; text-decoration:none; color:white; position: absolute;display: block; margin: 29px 484px;">PRICES</a>
+            <a style="font-family:'Agency FB';opacity:0; font-size: 40px; text-decoration:none; color:white; position: absolute;display: block; margin: 29px 588px;">CONTACT</a>
+            <a href="" onclick="window.open('https://discordapp.com/oauth2/authorize?&client_id=225713133321191424&scope=bot&permissions=0x8', 'newwindow', 'width=500, height=590'); return false;" target="_blank" style="font-family:'Agency FB'; font-size: 40px; text-decoration:none; color:white; position: absolute;display: block; margin: 29px 75%;text-align: right;width: 400px;">ADD TO SERVER</a>
+        </header>
+        <img id="background" src="http://i.imgur.com/JNviLr3.gif" style="width:1903px; height:1080px;position:fixed;opacity:.8; z-index:1; display:block; margin: -8px;" />
+        <div class="opening" style="position: absolute;z-index: 5; display: block; margin: 830px 12.5%; width: 75%;height:956px; background-color: #151515">
+            <div class="welcomemessage" style="left:25%;position:absolute;display:block;width:50%; background-color:#151515; color:#151515; top: -450px;height:25%;outline:solid;outline-width:0px;outline-color:black">
+                <p style="color:white;display:block;position:absolute;font-size:45px; font-family:'Agency FB';text-align: center;color:white;top:-10px;left:65px">Welcome Visitor!<br/>Sadly, We weren't quite ready for you yet!<br />This is a little embarrassing!</p>
+            </div>
+            <p style="color:white; font-family:'Agency FB';font-size:100px;text-align: center;margin-top: -1px">KLAYPEX BOT</p>
+            <p style="color:white; font-family:'Agency FB';font-size:30px;text-align:center;"></p>
+        </div>
+
+        <div class="second" style="position: absolute;z-index: 4; display: block; margin: 5000px -8px; width: 1903px;height:442px; background-color: #151515">
+            <p style="color:white; font-family:'Californian FB';text-align: center;color:white"></p>
+        </div>
+    </div>
+    <div id="sidebar" style="background-color: #111111;">
+    </div>
+    <script>
+        (function scroll() {
+            $('html, body').animate({
+                scrollTop: 200
+            }, 200);
+        })
+    </script>
+    <script>
+        function backgroundanimation() {
+            setInterval(timer, 10);
+            function timer() {
+
+            }
+        }
+    </script>
+    <script>
+        var currentbg = Math.round(Math.random() * 5) + 1;
+        setInterval(generationrand, 5000);
+        function generationrand() {
+            currentbg = Math.round(Math.random() * 5) + 1;
+            changewallpaper();
+        }
+       
+        function changewallpaper() {
+            var bg = document.getElementById("background");
+            if (currentbg == 1) {
+                bg.src = "http://i.imgur.com/6XxLQkY.gif";
+                currentbg = 2;
+            }else if(currentbg == 2){
+                bg.src = "http://i.imgur.com/7wUvnKc.gif";
+                currentbg = 3;
+            } else if (currentbg == 3) {
+                bg.src = "http://i.imgur.com/2H1PMPT.gif";
+                currentbg = 4;
+            } else if (currentbg == 4) {
+                bg.src = "http://i.imgur.com/f2QZBNF.gif";
+                currentbg = 5;
+            } else if (currentbg == 5) {
+                bg.src = "http://i.imgur.com/JNviLr3.gif";
+                currentbg = 1;
+            }
+        }
+        changewallpaper();
+    </script>
+    <script>
+        $(function () {
+            $('a[href*="#"]:not([href="#"])').click(function () {
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    if (target.length) {
+                        $('html, body').animate({
+                            scrollTop: target.offset().top
+                        }, 1000);
+                        return false;
+                    }
+                }
+            });
+        });
+    </script>
+    <script>
+        var pos = 0;
+        function myMove() {
+            var elem = document.getElementById("main");
+            function getSet(){
+                if (pos == 300) {
+                    var id = setInterval(frame2, 5);
+                } else if(pos == 0){
+                    var id = setInterval(frame, 5);
+                }
+            }
+            getSet();
+            function frame() {
+                //pos += 10;
+                //elem.style.left = pos + 'px';
+                elem.style.left = 250;
+                if (pos == 300) {  
+                }
+                //window.alert('test');
+                //clearInterval(id);
+                }
+            function frame2() {
+                //pos -= 10;
+                //elem.style.left = pos + 'px';
+                elem.style.left = 0;
+                //if (pos == 0) {
+                //    clearInterval(id);
+                //}
+            }
+        }
+    </script>
+</body>
+</html>
