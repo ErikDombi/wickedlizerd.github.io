@@ -1,0 +1,50 @@
+body {
+margin-left:0px;
+margin-top:0px;
+position:absolute;
+display:block;
+width: 1024px;
+margin:auto;
+overflow-x:hidden;
+-ms-overflow-style: none;
+}
+
+
+*{
+	font-family: 'Agency FB';
+	color: white;
+}
+
+::-webkit-scrollbar { width: 0 !important }
+
+#parent{
+	display:block;
+	position:absolute;
+	width:100%;
+	height:2000px;
+	text-align:center;
+	background: #51b9ff; /* For browsers that do not support gradients */    
+	background: -webkit-linear-gradient(left top, #42f47d, #51b9ff); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(bottom right, #42f47d, #51b9ff); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(bottom right, #42f47d, #51b9ff); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to bottom right, #42f47d, #51b9ff); /* Standard syntax (must be last) */
+}
+
+strong{
+	font-size:22px;
+}
+
+#child{
+	align: center;
+	margin:auto;
+}
+
+h2{
+	font-size: 50px;
+	align: center;
+}
+
+p {
+   align: center;
+   margin-top: -50px;
+}
