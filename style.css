@@ -3,7 +3,7 @@ margin-left:0px;
 margin-top:0px;
 position:absolute;
 display:block;
-width: 1024px;
+width: 100%px;
 margin:auto;
 overflow-x:hidden;
 -ms-overflow-style: none;
@@ -13,15 +13,20 @@ overflow-x:hidden;
 *{
 	font-family: 'Agency FB';
 	color: white;
+	-webkit-user-select: none; /* Chrome/Safari */        
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE10+ */
+	-o-user-select: none; /*Not yet implemented*/
+	user-select: none; /*Not yet implemented*/
 }
 
-::-webkit-scrollbar { width: 0 !important }
+::-webkit-scrollbar { color:blue !important;}
 
 #parent{
 	display:block;
 	position:absolute;
 	width:100%;
-	height:2000px;
+	height:5200px;
 	text-align:center;
 	background: #51b9ff; /* For browsers that do not support gradients */    
 	background: -webkit-linear-gradient(left top, #42f47d, #51b9ff); /* For Safari 5.1 to 6.0 */
@@ -30,13 +35,22 @@ overflow-x:hidden;
 	background: linear-gradient(to bottom right, #42f47d, #51b9ff); /* Standard syntax (must be last) */
 }
 
-strong{
-	font-size:22px;
+img {
+  display: block;
+  max-width:230px;
+  max-height:95px;
+  width: auto;
+  height: auto;
+  margin: auto;
 }
 
 #child{
 	align: center;
 	margin:auto;
+}
+
+strong{
+	font-size:22px;
 }
 
 h2{

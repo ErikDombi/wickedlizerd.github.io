@@ -1,67 +1,148 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>ICS20</title>
+		<title>History of Computers</title>
 		<link href="style.css" rel="stylesheet">
 	</head>
-	<body onload="window.location.replace('168.235.89.28')">
+	
+	<script>
+		function OpenDownload(){
+			var c = document.getElementById("download");
+			c.innerHTML = '<p id="download" style="margin-top:-10px;"><a href="style.css" download>CSS File</a> | <a href="index.html" download>HTML File</a> | <a onclick="CloseDownload()" style="text-decoration: underline;">Hide</a><br>Made & Designed by Erik Dombi</p>'
+		}
+		function CloseDownload(){
+			var c = document.getElementById("download");
+			c.innerHTML = '<p id="download" style="margin-top:-10px;">Want to download the source files? click <a style="text-decoration: underline;" onclick="OpenDownload()">here</a><br>Made & Designed by Erik Dombi</p>'
+		}
+	</script>
+	
+	<body>
 		<div class="parent" id="parent">
 			<div class="child">
-				<h1 style="margin-top:30px;">ICS20 HTML Intro</h1>
+				<h1 style="margin-top:30px;">History of Computers</h1>
+				<p id="download" style="margin-top:-10px;">Want to download the source files? click <a style="text-decoration: underline;" onclick="OpenDownload()">here</a><br>Made & Designed by Erik Dombi</p>
 				<div>
 					<h2>Abacus</h2>
 					<p><strong>Definition: </strong>The abacus, also called a counting frame, is a calculating tool that was in use in Europe, China and Russia,<br>centuries before the adoption of the written Hindu–Arabic numeral system</p>
+					<img src="https://upload.wikimedia.org/wikipedia/commons/e/ea/Boulier1.JPG"/>
 				</div>
 				
 				<div>
 					<h2>Ada Lovelace</h2>
 					<p><strong>Definition: </strong>Augusta Ada King-Noel, Countess of Lovelace was an English mathematician and writer,<br> chiefly known for her work onCharles Babbage's proposed mechanical general-purpose computer, the Analytical Engine</p>
+					<img src="https://www.biography.com/.image/c_fill%2Ccs_srgb%2Cg_face%2Ch_300%2Cq_80%2Cw_300/MTE4MDAzNDEwODQwOTQ2MTkw/ada-lovelace-20825279-1-402.jpg"/>
 				</div>
 				
 				<div>
 					<h2>Charles Babbage</h2>
 					<p><strong>Definition: </strong>Charles Babbage KH FRS was an English polymath. A mathematician, philosopher, inventor and mechanical engineer,<br>Babbage originated the concept of a digital programmable computer</p>
+					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Charles_Babbage_1860.jpg/220px-Charles_Babbage_1860.jpg"/>
 				</div>
 				
 				<div>
 					<h2>Eniac 1</h2>
 					<p><strong>Definition: </strong>ENIAC (Electronic Numerical Integrator and Computer) was amongst the earliest electronic general-purpose computers made.<br>It was Turing-complete, digital and able to solve "a large class of numerical problems" through reprogramming</p>
-				</div>
-				
+					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Eniac.jpg/250px-Eniac.jpg"/>
 				<div>
 					<h2>Napier’s Bones</h2>
 					<p><strong>Definition: </strong>Napier's bones is a manually-operated calculating device created by John Napier of Merchiston for calculation of products and quotients of numbers</p>
+					<img src="https://upload.wikimedia.org/wikipedia/commons/f/fb/An_18th_century_set_of_Napier%27s_Bones.JPG"/>
 				</div>
 				
 				<div>
 					<h2>Intel 4004</h2>
 					<p><strong>Definition: </strong>The Intel 4004 is a 4-bit central processing unit (CPU) released by Intel Corporation in 1971.<br>It was the first commercially available microprocessor by Intel. The chip design started in April 1970, when Federico Faggin joined Intel, and it was completed under his leadership in January 1971</p>
+					<img src="data:image/jpeg;base64,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"/>
 				</div>
 				
 				<div>
-					<h2>Abacus</h2>
-					<p><strong>Definition: </strong>123</p>
+					<h2>Ethernet Computer Network</h2>
+					<p><strong>Definition: </strong>Ethernet is the most widely installed local area network (LAN) technology</p>
+					<img src="https://cdn.techterms.com/img/lg/ethernet_42.jpg"/>
 				</div>
 				
 				<div>
-					<h2>Abacus</h2>
-					<p><strong>Definition: </strong>123</p>
+					<h2>Commodore Pet</h2>
+					<p><strong>Definition: </strong>The Commodore PET (Personal Electronic Transactor) is a line of home/personal computers produced starting in 1977 by Commodore International</p>
+					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Commodore_2001_Series-IMG_0448b.jpg/280px-Commodore_2001_Series-IMG_0448b.jpg"/>
 				</div>
 				
 				<div>
-					<h2>Abacus</h2>
-					<p><strong>Definition: </strong>123</p>
+					<h2>VisiCalc</h2>
+					<p><strong>Definition: </strong>VisiCalc (for "visible calculator") was the first spreadsheet computer program for personal computers, originally released for the Apple II by VisiCorp</p>
+					<img src="data:image/png;base64,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"/>
 				</div>
 				
 				<div>
-					<h2>Abacus</h2>
-					<p><strong>Definition: </strong>123</p>
+					<h2>WordstarSoftware</h2>
+					<p><strong>Definition: </strong>WordStar is a word processor application that had a dominant market share during the early- to mid-1980s.<br>It was published by MicroPro International, and written for the CP/M operating system but later ported to MS-DOS</p>
+					<img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/e3/Wordstar_Screenshot.png/300px-Wordstar_Screenshot.png"/>
 				</div>
 				
 				<div>
-					<h2>Abacus</h2>
-					<p><strong>Definition: </strong>123</p>
+					<h2>Transistor</h2>
+					<p><strong>Definition: </strong>A transistor is a semiconductor device used to amplify or switch electronic signals and electrical power.<br>It is composed of semiconductor material usually with at least three terminals for connection to an external circuit</p>
+					<img src="https://www.build-electronic-circuits.com/wp-content/uploads/2014/05/TO-92_BC548.png"/>
+				</div> 
+				
+				<div>
+					<h2>FORTRAN</h2>
+					<p><strong>Definition: </strong>Fortran is a general-purpose, imperative programming language that is especially suited to numeric computation and scientific computing</p>
+					<img src="https://upload.wikimedia.org/wikipedia/commons/5/58/FortranCardPROJ039.agr.jpg"/>
 				</div>
+				
+				<div>
+					<h2>COBOL</h2>
+					<p><strong>Definition: </strong>COBOL is a compiled English-like computer programming language designed for business use. It is imperative, procedural and, since 2002, object-oriented</p>
+					<img src="http://www.mainframestechhelp.com/tutorials/cobol/cobol_common_files/images/inline_perform_until_code.jpg"/>
+				</div>
+				
+				<div>
+					<h2>Integrated circuit</h2>
+					<p><strong>Definition: </strong>An integrated circuit or monolithic integrated circuit (also referred to as an IC, a chip, or a microchip) is a set of electronic circuits on one small flat piece (or "chip") of semiconductor material, normally silicon</p>
+					<img src="https://www.build-electronic-circuits.com/wp-content/uploads/2014/10/Three_IC_circuit_chips-Public-Domain.jpg"/>
+				</div>
+				
+				<div>
+					<h2>ARPAnet</h2>
+					<p><strong>Definition: </strong>The Advanced Research Projects Agency Network (ARPANET) was an early packet switching network and the first network to implement the protocol suite TCP/IP. Both technologies became the technical foundation of the Internet</p>
+					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Arpanet_1974.svg/305px-Arpanet_1974.svg.png"/>
+				</div>
+				
+				<div>
+					<h2>MS-DOS</h2>
+					<p><strong>Definition: </strong>MS-DOS (acronym for Microsoft Disk Operating System) is a discontinued operating system for x86-based personal computers mostly developed by Microsoft</p>
+					<img src="https://fthmb.tqn.com/ukanjvRyFyKZUzq3Ki089LTVf-w=/768x0/filters:no_upscale()/about/msdos-commands-580d2b603df78c2c7355a118.png"/>
+				</div>
+				
+				<div>
+					<h2>Macintosh Computer</h2>
+					<p><strong>Definition: </strong>The Macintosh (branded as Mac since 1998) is a series of personal computers (PCs) designed, developed, and marketed by Apple Inc. Steve Jobs introduced the original Macintosh computer on January 24, 1984</p>
+					<img src="http://oldcomputers.net/pics/macintosh.jpg"/>
+				</div>
+				
+				<div>
+					<h2>Microsoft Windows</h2>
+					<p><strong>Definition: </strong>Windows 95 (codenamed Chicago) is a consumer-oriented operating system developed by Microsoft. It was released on August 24, 1995. Windows 95 merged Microsoft's formerly separate MS-DOS and Windows products</p>
+					<img src="https://techspot-static-xjzaqowzxaoif5.stackpathdns.com/images2/news/bigimage/2015/08/2015-08-24-image-11.jpg"/>
+				</div>
+				
+				<div>
+					<h2>HTML</h2>
+					<p><strong>Definition: </strong>Hypertext Markup Language (HTML) is the standard markup language for creating web pages and web applications. With Cascading Style Sheets (CSS) and JavaScript it forms a triad of cornerstone technologies for the World Wide Web</p>
+					<img src="https://image.freepik.com/free-icon/html-file-with-code-symbol_318-45756.jpg"/>
+				</div>
+				
+				<div>
+					<h2>The C programming Language</h2>
+					<p><strong>Definition: </strong>C is a general-purpose, imperative computer programming language, supporting structured programming, lexical variable scope and recursion, while a static type system prevents many unintended operations</p>
+					<img src="http://modeling-languages.com/wp-content/uploads/2012/03/HelloWorld-Plain-10.gif"/>
+				</div>
+				
+				<!--Hidden iframe used for downloading files-->
+				<iframe id="my_iframe" style="display:none;"></iframe>
+				
+				<p style="margin-top:50px;">Made & Designed by Erik Dombi</p>
 			</div>
 		</div>
 	</body>
