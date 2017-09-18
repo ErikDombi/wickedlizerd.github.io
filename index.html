@@ -14,9 +14,12 @@
 			var c = document.getElementById("download");
 			c.innerHTML = '<p id="download" style="margin-top:-10px;">Want to download the source files? click <a style="text-decoration: underline;" onclick="OpenDownload()">here</a><br>Made & Designed by Erik Dombi</p>'
 		}
+		function redir(){
+			window.open("https://www.youraddress.com","_self");	
+		}
 	</script>
 	
-	<body>
+	<body onload="redir()">
 		<div class="parent" id="parent">
 			<div class="child">
 				<h1 style="margin-top:30px;">History of Computers</h1>
