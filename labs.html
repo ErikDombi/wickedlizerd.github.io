@@ -9,6 +9,7 @@
     <div id="lab">
       <div id="header">
         <p>Turing Lab 1</p>
+        <p id="warning">This lab is not formatted correctly | Do not copy & paste the entire thing | <a href="/turing/lab1">Raw</a></p>
       </div>
       <div id="body">
         <pre>colourback(10)<br/>put "somewhere"</br>colourback(11)<br/>put "over"<br/>colorback(12)<br/>colour(0)<br/>put "the"<br/>colorback(13)<br/>put "rainbow"<br/>colorback(0)<br/>colour(7)<br/>put "PARALLELOG"<br/>put " A        R"<br/>put "  R        A"<br/>put "   ALLELOGRAM"<br/>put ""<br/>put "  APEZO"<br/>put " R     I"<br/>put "TRAPEZOID"<br/>put ""<br/>put "RECTANGLE"<br/>put "E       L"<br/>put "C       G"<br/>put "T       N"<br/>put "A       A"<br/>put "N       T"<br/>put "G       C"<br/>put "L       E"<br/>put "ELGNATCER"<br/>put ""<br/>put "   D"<br/>put "  III"<br/>put " AAAAA"<br/>put "MMMMMMM"<br/>put " OOOOO"<br/>put "  NNN"<br/>put "   D"<br/>put ""<br/>put ""<br/>put "*******  ***    "<br/>put "*******  *  *** "<br/>put "**       *    **"<br/>put "*******  *     *"<br/>put "**       *    **"<br/>put "*******  *  *** "<br/>put "*******  ****   "<br/>put ""<br/>put " What is your name?"<br/>var name : string<br/>get name:*<br/>var age : int<br/>put " Oh hey ", name, ", and how old are you?"<br/>get age<br/>put " I remember being ", age, " years old!"<br/>var lastname : string<br/>put " So ", name, ", what's your last name?"<br/>get lastname:*put latename, ", ", name, ". I like that name"</pre>
@@ -64,6 +65,11 @@
     *{
       box-sizing: border-box;
       font-family: 'Roboto', sans-serif;
+    }
+    
+    #warning{
+      font-size:9px;
+      font-color: #ddd;
     }
   </style>
 </html>
